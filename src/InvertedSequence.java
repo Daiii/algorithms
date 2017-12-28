@@ -28,4 +28,3 @@ public class InvertedSequence {
         }
         System.out.println(builder.toString());
     }
-}
