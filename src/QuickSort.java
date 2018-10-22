@@ -33,20 +33,20 @@ public class QuickSort {
             while (i < j && array[j] > key) {
                 j--;
             }
-            //从后往前找到第一个比key小的数与array[i]交换
+            // 从后往前找到第一个比key小的数与array[i]交换
             array[i] = array[j];
 
             while (i < j && array[i] < key) {
                 i++;
             }
 
-            //从前往后找到第一个比key大的数与array[j]交换
+            // 从前往后找到第一个比key大的数与array[j]交换
             array[j] = array[i];
         }
 
-        //一趟快排之后已经将key的位置找到
+        // 一趟快排之后已经将key的位置找到
         array[i] = key;
-        //对key左边的进行排序
+        // 对key左边的进行排序
         quickSort(array, left, i - 1);
         // 对key右边的进行排序
         quickSort(array, i + 1, right);
