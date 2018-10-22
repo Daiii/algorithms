@@ -7,20 +7,18 @@ import java.util.Arrays;
  * @date 2018/10/22
  */
 public class QuickSort {
-
     public static void main(String[] args) {
         int array[] = {32, 12, 7, 78, 23, 45};
         quickSort(array, 0, array.length - 1);
         System.out.println(Arrays.toString(array));
     }
 
-
     /**
      * 快速排序
      *
      * @param array 数组
      * @param left  左下标
-     * @param right 又下标
+     * @param right 右下标
      */
     private static void quickSort(int array[], int left, int right) {
         if (left >= right) {
